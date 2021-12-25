@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'My Site',
+  title: 'Redux Toolkit 中文网',
   tagline: 'The tagline of my site',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -8,21 +8,34 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Redux Toolkit 中文网',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Redux Toolkit Logo',
+        src: 'img/redux.svg',
       },
       links: [
         {
-          to: 'docs/doc1',
-          activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Getting Started',
+          to: 'docs/introduction/getting-started',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          label: 'Tutorials',
+          to: 'docs/tutorials/tutorials-overview',
+          position: 'left',
+        },
+        {
+          label: 'Usage Guide',
+          to: 'docs/usage/usage-guide',
+          position: 'left',
+        },
+        {
+          label: 'API Reference',
+          to: 'docs/api/configureStore',
+          position: 'left',
+        },
+        {
+          href: 'https://github.com/Chinvaejay/redux-toolkit-cn',
           label: 'GitHub',
           position: 'right',
         },
@@ -30,17 +43,29 @@ module.exports = {
     },
     footer: {
       style: 'dark',
+      logo: {
+        alt: 'Redux Logo',
+        src: 'img/redux_white.svg',
+      },
       links: [
         {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/doc1',
+              label: 'Getting Started',
+              to: 'docs/introduction/getting-started',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2',
+              label: 'Tutorials',
+              to: 'docs/tutorials/tutorials-overview',
+            },
+            {
+              label: 'Usage Guide',
+              to: 'docs/usage/usage-guide',
+            },
+            {
+              label: 'API Reference',
+              to: 'docs/api/configureStore',
             },
           ],
         },
@@ -49,15 +74,11 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'http://stackoverflow.com/questions/tagged/redux',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://discord.gg/0ZcbPKXt5bZ6au5t',
             },
           ],
         },
@@ -65,17 +86,23 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'GitHub',
+              href: 'https://www.github.com/reduxjs/redux-toolkit',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              html: `
+                <a href="https://www.netlify.com">
+                  <img
+                    src="https://www.netlify.com/img/global/badges/netlify-light.svg"
+                    alt="Deploys by Netlify"
+                  />
+                </a>
+              `,
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © 2015–${new Date().getFullYear()} Dan Abramov and the Redux documentation authors.`,
     },
   },
   presets: [
